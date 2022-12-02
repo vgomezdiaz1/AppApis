@@ -17,12 +17,16 @@ public class MainActivity extends AppCompatActivity {
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
+
+        //Como hay que leer desde internet hay que darle permiso para acceder a internet desde el manifest
+
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
-        Peticion p = new Peticion();
+        PeticionGitHub p = new PeticionGitHub();
         p.start();
 
-
+        PeticionZaragozaAnimales p1 = new PeticionZaragozaAnimales();
+        p1.start();
 
     }
 }
