@@ -28,5 +28,7 @@ public class MainActivity extends AppCompatActivity {
         PeticionZaragozaAnimales p1 = new PeticionZaragozaAnimales();
         p1.start();
 
+        PeticionZaragozaFarmacias p2 = new PeticionZaragozaFarmacias();
+        p2.start();
     }
 }
